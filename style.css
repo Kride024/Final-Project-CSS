@@ -62,6 +62,15 @@ li{
     margin:0 auto;
     padding:9.6rem 2.4rem;
 }
+.section-about .container:first-child,
+.section-blog .container:first-child,
+.section-course .container:first-child,
+.section-contact--homepage .container:first-child,
+.section-why--choose .container:first-child{
+    padding:6.4rem 0 2.4rem 0;
+}
+
+
 .grid{
     display:grid;
 }
@@ -366,9 +375,11 @@ background-color: #3381ff;
     margin:0 auto;
     box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0px,
     rgba(60,64,67,0.15)0px 2px 6px 2px;
-  &grid{
+    margin-bottom:10rem;
+    &grid{
    display: grid;
    align-items:center;
+   
   }
 }
 .contact-title{
