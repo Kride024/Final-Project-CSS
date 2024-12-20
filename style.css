@@ -43,7 +43,8 @@ li{
     --main-color:#0062ff;
     --supporting-color:#ebf3fe;
     --font-color:#424242;
-    --bg-color:#ffffff;
+    /* --bg-color:#ffffff; */
+    --bg-color:#f7fcff;
     --heading-color:#000a19;
     --hero-heading-color:#003b99;
     --white-color:#ffffff;
@@ -250,7 +251,9 @@ main{
 
 /***** start Course section *****/ 
 
-
+.section-course{
+    background-color: var(--bg-color);
+}
 .section-course .grid{
 gap:3.2rem;
 }
@@ -369,16 +372,18 @@ background-color: #3381ff;
 }
   /***** End why choose Section *****/
 /***** contact home Section *****/
-.section-contact-homepage{
+.section-contact--homepage{
     width:60%;
     min-height:30rem;
     margin:0 auto;
     box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0px,
     rgba(60,64,67,0.15)0px 2px 6px 2px;
     margin-bottom:10rem;
+    padding:0 3.2rem;
     &grid{
-   display: grid;
+   
    align-items:center;
+ gap:6.4rem; 
    
   }
 }
@@ -393,7 +398,7 @@ background-color: #3381ff;
     width:90%;
     height:auto;
 }
-.section-contact-homepage .fa-solid{
+.section-contact--homepage .fa-solid{
 padding:0;
 color:var(--white-color); /*this icon work diff for bg and color so don't confuse*/
 background-color: var(--main-color);
