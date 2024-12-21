@@ -51,6 +51,7 @@ li{
     --para-color:#504e4d;
     --bnt-hover-bg-color:#003b99;
     --btn-box-shadow:rgba(100,100,111,0.2)0px 7px 29px 0px;
+    --footer-bg-color:#040d12;
 }
 
 /* layout */
@@ -380,6 +381,9 @@ background-color: #3381ff;
     rgba(60,64,67,0.15)0px 2px 6px 2px;
     margin-bottom:10rem;
     padding:0 3.2rem;
+     position:relative; 
+    background-color: var(--white-color);
+    
     &grid{
    
    align-items:center;
@@ -405,3 +409,33 @@ background-color: var(--main-color);
 }
 
 /***** End contact home Section *****/
+
+
+/***** Footer Section *****/ 
+footer{
+    background-color: var(--footer-bg-color);
+    margin-top:-15rem;
+}
+footer *{
+    color:var(--white-color);
+}
+.footer-subheading{
+    font-size:2.2rem;
+    font-weight:700;
+}
+.footer-1--div p{
+    margin:1rem 0 3rem 0;
+}
+.footer-1--div {
+   & .social-footer--icons{
+    
+    display:flex;
+    gap:2.4rem;
+   } 
+    & .fa-brands{
+        color:var(--footer-bg-color);
+        
+    }
+}
+
+/***** End Footer Section *****/
