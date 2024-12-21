@@ -419,23 +419,45 @@ footer{
 footer *{
     color:var(--white-color);
 }
+footer .grid{
+    text-align:right;
+}
 .footer-subheading{
     font-size:2.2rem;
     font-weight:700;
 }
 .footer-1--div p{
     margin:1rem 0 3rem 0;
+   
 }
 .footer-1--div {
+    text-align: left;
    & .social-footer--icons{
     
     display:flex;
     gap:2.4rem;
+   
+   
+    }
    } 
     & .fa-brands{
+        width:5rem;
+        aspect-ratio:1;
+        background-color:var(--supporting-color);
         color:var(--footer-bg-color);
-        
-    }
+        display:grid;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition:all 0.3s linear;
+        &:hover{
+            color:var(--supporting-color);
+            background-color: var(--bnt-hover-bg-color);
+            rotate:360deg;
+        }
+   
+       
+
 }
 
 /***** End Footer Section *****/
